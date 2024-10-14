@@ -1,0 +1,210 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('./full-hd (1).jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 2s ease-out;
+}
+
+.header p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.title h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #333;
+    animation: fadeInUp 1s ease-out forwards;
+    text-align: center; 
+}
+
+.graduate-name h2 {
+    font-size: 26px;
+    margin: 10px 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    text-align: center; 
+}
+
+.event-details {
+    text-align: left; 
+    margin-top: 20px;
+}
+
+.event-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+/* Countdown */
+.countdown {
+    margin-top: 30px;
+    animation: fadeInUp 2.5s ease-out forwards;
+    text-align: center;
+}
+
+#countdown-timer {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#countdown-timer span {
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 36px;
+    }
+
+    .graduate-name h2 {
+        font-size: 22px;
+    }
+
+    .event-details p {
+        font-size: 14px;
+    }
+
+    #countdown-timer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .graduate-name h2 {
+        font-size: 18px;
+    }
+
+    .event-details p {
+        font-size: 12px;
+    }
+
+    #countdown-timer {
+        font-size: 14px;
+    }
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.time-box {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-box span {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.time-box p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    #countdown-timer {
+        gap: 5px; 
+    }
+
+    .time-box {
+        padding: 6px; 
+        min-width: 50px; 
+        max-width: 80px; 
+    }
+
+    .time-box span {
+        font-size: 18px;
+    }
+
+    .time-box p {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown-timer {
+        gap: 3px; 
+        justify-content: space-evenly;
+    }
+
+    .time-box {
+        padding: 4px; 
+        min-width: 40px; 
+        max-width: 60px; 
+    }
+
+    .time-box span {
+        font-size: 16px;
+    }
+
+    .time-box p {
+        
+        font-size: 8px; 
+    }
+}
+
+.invitation-text {
+    text-align: center;
+    
+}
+
+p {
+    line-height: 1.8; 
+}
